@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace FlightSim
 {
-    [CreateAssetMenu(fileName = "NewTrackData", menuName = "Indie-Pixel/Track Data/New Track Data", order = 1)]
+    [CreateAssetMenu(fileName = "NewTrackData", menuName = "Indie-Pixel/Ring Track Data/New Track Data", order = 1)]
     public class IP_Track_Data : ScriptableObject
     {
         #region Variables

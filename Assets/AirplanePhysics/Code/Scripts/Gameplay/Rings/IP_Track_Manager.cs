@@ -125,7 +125,7 @@ namespace FlightSim
                     int idTrack = int.Parse(name) - 1;
 
                     but.onClick.RemoveAllListeners();
-                    but.onClick.AddListener(() => missionsController.StartOnClick(idTrack));
+                    but.onClick.AddListener(() => missionsController.StartRingRaceOnClick(idTrack));
                     string test = but.onClick.GetPersistentMethodName(0);
                 }
 

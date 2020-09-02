@@ -8,7 +8,8 @@ namespace FlightSim
     {
         [Header("Missions Properties")]
         public GameObject Missions_Container;
-        public IP_Track_Manager manager;
+        public IP_Track_Manager ringRaceManager;
+        public Race_Track_Manager raceManager;
 
         [SerializeField]
         private KeyCode missionsKey = KeyCode.N;
@@ -46,15 +47,21 @@ namespace FlightSim
             }
 
         }
-        public void StartOnClick(int trackID)
+        public void StartRingRaceOnClick(int trackID)
         {
             Debug.Log(trackID);
-            manager.StartTrack(trackID);
+            ringRaceManager.StartTrack(trackID);
             Missions_Container.SetActive(false);
             isVysible = false;
             return;
-
-
+        }
+        public void StartRaceOnClick(int trackID)
+        {
+            Debug.Log(trackID);
+            raceManager.StartTrack(trackID);
+            Missions_Container.SetActive(false);
+            isVysible = false;
+            return;
         }
     }
     }
