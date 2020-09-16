@@ -221,7 +221,6 @@ namespace FlightSim
         }
         void UpdatePositions()
         {
-            object players = [];
             foreach(GameObject plane in planes)
             {
                 float dist = Vector3.Distance(plane.transform.position, gates[gates.Count() -1].transform.position);
